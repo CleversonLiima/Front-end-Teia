@@ -5,64 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teia - Painel de Controle</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body class="dashboard-body">
 
     <div class="dashboard-layout">
         
-        <aside class="sidebar">
-            <div class="user-profile">
+        <div class="sidebar-wrapper">
+            <div class="sidebar-trigger">
                 <div class="avatar-placeholder">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                 </div>
-                <div class="user-info">
-                    <h3>Perfil Neural</h3>
-                    <span>NÍVEL: ARQUITETO</span>
-                </div>
             </div>
 
-            <nav class="side-nav">
-                <a href="#" class="nav-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                    Nodos
-                </a>
-                <a href="#" class="nav-item active">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                    Caminhos
-                </a>
-                <a href="#" class="nav-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                    Recursos
-                </a>
-                <a href="#" class="nav-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                    Rede
-                </a>
-                <a href="#" class="nav-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                    Configurações
-                </a>
-            </nav>
+            <aside class="sidebar">
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h3>Perfil Neural</h3>
+                        <span>NÍVEL: ARQUITETO</span>
+                    </div>
+                </div>
 
-            <button class="btn-new-connection">NOVA CONEXÃO</button>
-        </aside>
+                <nav class="side-nav">
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        Nodos
+                    </a>
+                    <a href="#" class="nav-item active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        Caminhos
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        Recursos
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        Rede
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        Configurações
+                    </a>
+                </nav>
 
+                <button class="btn-new-connection">NOVA CONEXÃO</button>
+            </aside>
+        </div>
         <main class="main-content">
             
             <header class="top-nav">
-                <div class="logo">TEIA</div>
-                <div class="top-links">
-                    <a href="#">EXPLORAR</a>
-                    <a href="#" class="active">TEIA</a>
-                    <a href="#">CONECTAR</a>
-                    <a href="#">ACADEMIA</a>
+                <div></div>
+                <nav class="menu">
+                    <a href="home.html">HOME</a>
+                    <a href="sobre.html">SOBRE NÓS</a>
+                    <a href="#">PERFIL</a>
+                </nav>
+                <div class="header-actions">
+                    <div></div>
                 </div>
-                <div class="search-bar">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" placeholder="Buscar Nodos Neurais...">
-                </div>
-                <button class="btn-start">INICIAR</button>
             </header>
 
             <section class="dash-hero">
@@ -78,7 +79,6 @@
             </section>
 
             <div class="dash-grid">
-                
                 <div class="dash-card main-chart">
                     <div class="chart-header">
                         <div>
@@ -169,8 +169,7 @@
                     </div>
 
                     <div class="course-card">
-                        <div class="course-img server-bg">
-                        </div>
+                        <div class="course-img server-bg"></div>
                         <div class="course-content">
                             <h3>Kubernetes para Cargas de Trabalho de IA</h3>
                             <div class="course-meta">
@@ -198,9 +197,8 @@
             </section>
 
             <footer class="site-footer">
-                <div class="logo">TEIA</div>
                 <div class="footer-links">
-                    <a href="#">PRIVACY NODE</a>
+                    <a href="sobre.html">SOBRE NÓS</a>
                     <a href="#">TERMS OF CONNECTION</a>
                     <a href="#">GLOBAL PROTOCOL</a>
                 </div>

@@ -69,3 +69,92 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+// ================================
+// ANIMAÇÃO AO SCROLL
+// ================================
+
+const elements = document.querySelectorAll(".fade");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+
+
+// ================================
+// CONTADOR DAS ESTATÍSTICAS
+// ================================
+
+const counters = document.querySelectorAll(".stat-box h2");
+
+const startCounter = (counter) => {
+  let start = 0;
+  const end = parseInt(counter.innerText.replace("+", "").replace("%", ""));
+
+  const update = () => {
+    start += end / 80;
+
+    if (start < end) {
+      counter.innerText = Math.floor(start) + (counter.innerText.includes("%") ? "%" : "");
+      requestAnimationFrame(update);
+    } else {
+      counter.innerText = counter.innerText;
+    }
+  };
+
+  update();
+};
+
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      startCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+});
+
+counters.forEach(counter => {
+  counterObserver.observe(counter);
+});
+
+
+// ================================
+// FAQ INTERATIVO (ÍCONE GIRANDO)
+// ================================
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  item.addEventListener("toggle", () => {
+    const icon = item.querySelector(".faq-icon");
+
+    if (item.open) {
+      icon.style.transform = "rotate(45deg)";
+    } else {
+      icon.style.transform = "rotate(0deg)";
+    }
+  });
+});
+
+
+// ================================
+// PARALLAX NA IMAGEM HERO
+// ================================
+
+const hero = document.querySelector(".hero-image");
+
+document.addEventListener("mousemove", (e) => {
+  if (!hero) return;
+
+  const x = (window.innerWidth / 2 - e.pageX) / 60;
+  const y = (window.innerHeight / 2 - e.pageY) / 60;
+
+  hero.style.transform = `translate(${x}px, ${y}px)`;
+});

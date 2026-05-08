@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teia - Iniciar Conexão</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
 </head>
 <body class="login-page">
 
@@ -28,33 +29,19 @@
         <div class="login-card">
             <h2>Iniciar Conexão</h2>
             <p class="subtitle">Acesse seu perfil e sua rede de oportunidades</p>
-
-            <div class="sso-buttons">
-                <button type="button" class="btn-secondary">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-                    ID de Conexão
-                </button>
-                <button type="button" class="btn-secondary">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-                    PROTOCOL
-                </button>
-            </div>
-
-            <div class="divider"><span>OR EMAIL</span></div>
-
             <form id="loginForm">
                 <div class="input-group">
-                    <label>NODE IDENTIFIER</label>
+                    <label>EMAIL</label>
                     <div class="input-wrapper">
                         <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
-                        <input type="email" placeholder="architect@teia.network" required>
+                        <input type="email" placeholder="exemplo@teia.com" required>
                     </div>
                 </div>
 
                 <div class="input-group">
                     <div class="label-row">
-                        <label>SECURITY KEY</label>
-                        <a href="#" class="lost-access">LOST ACCESS?</a>
+                        <label>SENHA</label>
+                        <a href="#" class="lost-access">ESQUECEU SUA SENHA?</a>
                     </div>
                     <div class="input-wrapper">
                         <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
@@ -66,25 +53,16 @@
                 </div>
 
                 <button type="submit" class="btn-primary btn-glow">
-                    Establish Link 
+                    ENTRAR 
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:8px"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
                 </button>
             </form>
         </div>
 
-        <p class="forge-account">Unconnected to the lattice? <a href="index.html">Forge New Account</a></p>
+        <p class="forge-account">Não possui uma conta? <a href="index.html">Crie uma nova</a></p>
 
     </main>
 
-    <footer class="site-footer">
-        <div class="logo">TEIA</div>
-        <p>© 2024 TEIA PLATFORM. THE NEURAL LATTICE ECOSYSTEM.</p>
-        <div class="footer-links">
-            <a href="#">PRIVACY NODE</a>
-            <a href="#">TERMS OF CONNECTION</a>
-            <a href="#">GLOBAL PROTOCOL</a>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
