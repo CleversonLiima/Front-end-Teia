@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teia - Iniciar Conexão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body class="login-page">
+
+    <div class="bg-graphic">
+        <svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="49" stroke="#1A2033" stroke-width="1" stroke-dasharray="4 4"/>
+            <circle cx="50" cy="50" r="25" stroke="#1A2033" stroke-width="1"/>
+            <circle cx="50" cy="1" r="2" fill="#2A3249"/><circle cx="50" cy="99" r="2" fill="#2A3249"/>
+            <circle cx="1" cy="50" r="2" fill="#2A3249"/><circle cx="99" cy="50" r="2" fill="#2A3249"/>
+        </svg>
+    </div>
+
+    <main class="login-container">
+        
+        <header class="login-header">
+            <h1 class="logo">TEIA</h1>
+            <p>Conexão entre Estudantes e Empresas</p>
+        </header>
+
+        <div class="login-card">
+            <h2>Iniciar Conexão</h2>
+            <p class="subtitle">Acesse seu perfil e sua rede de oportunidades</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>EMAIL</label>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+                        <input type="email" placeholder="exemplo@teia.com" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="label-row">
+                        <label>SENHA</label>
+                        <a href="#" class="lost-access">ESQUECEU SUA SENHA?</a>
+                    </div>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <input type="password" id="loginPassword" placeholder="••••••••••••" required>
+                        <button type="button" class="password-toggle" id="toggleLoginPassword">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary btn-glow">
+                    ENTRAR 
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:8px"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                </button>
+            </form>
+        </div>
+
+        <p class="forge-account">Não possui uma conta? <a href="index.html">Crie uma nova</a></p>
+
+    </main>
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="sobre.html">SOBRE NÓS</a>
+                    <a href="#">CONTATO</a>
+                    <a href="#">POLÍTICA DE PRIVACIDADE</a>
+                </div>
+                <p>© 2024 PROJETO TEIA. CONECTANDO ESTUDANTES, CURSOS E OPORTUNIDADES. </p>
+            </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

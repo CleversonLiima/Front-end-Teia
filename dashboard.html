@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teia - Painel de Controle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+        
+        <div class="sidebar-wrapper">
+            <div class="sidebar-trigger">
+                <div class="avatar-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h3>Perfil</h3>
+                        <span>NÍVEL: ARQUITETO</span>
+                    </div>
+                </div>
+
+                <nav class="side-nav">
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        Conexões
+                    </a>
+                    <a href="#" class="nav-item active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        Trilhas
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        Cursos
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        Empresas
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        Configurações
+                    </a>
+                </nav>
+
+                <button class="btn-new-connection">NOVA CONEXÃO</button>
+            </aside>
+        </div>
+        <main class="main-content">
+            
+            <header class="top-nav">
+                <div></div>
+                <nav class="menu">
+                    <a href="home.html">HOME</a>
+                    <a href="sobre.html">SOBRE NÓS</a>
+                    <a href="#">PERFIL</a>
+                </nav>
+                <div class="header-actions">
+                    <div></div>
+                </div>
+            </header>
+
+            <section class="dash-hero">
+                <div class="hero-text">
+                    <span class="eyebrow">— ANÁLISE DE CURRÍCULO IA</span>
+                    <h1>Otimize seu <span class="highlight">Caminho Neural</span></h1>
+                    <p>O motor da TEIA mapeia seu DNA profissional em relação à rede da indústria em evolução para identificar lacunas e acelerar seu crescimento.</p>
+                </div>
+                <button class="btn-update-cv">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    Atualizar CV
+                </button>
+            </section>
+
+            <div class="dash-grid">
+                <div class="dash-card main-chart">
+                    <div class="chart-header">
+                        <div>
+                            <h2>Mapa de Alinhamento Neural</h2>
+                            <p>Cargo Alvo: Arquiteto(a) de IA Sênior</p>
+                        </div>
+                        <div class="score">
+                            <h3>84%</h3>
+                            <span>COMPATIBILIDADE NA TEIA</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>REDES NEURAIS & DEEP LEARNING</span>
+                                <span>MATCH: 95%</span>
+                            </div>
+                            <div class="progress-bg"><div class="progress-fill" style="width: 95%; background: var(--accent);"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>INFRAESTRUTURA CLOUD (AWS/AZURE)</span>
+                                <span>MATCH: 62%</span>
+                            </div>
+                            <div class="progress-bg"><div class="progress-fill" style="width: 62%; background: #4ADE80;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>OTIMIZAÇÃO MATEMÁTICA</span>
+                                <span>MATCH: 88%</span>
+                            </div>
+                            <div class="progress-bg"><div class="progress-fill" style="width: 88%; background: #3B82F6;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>ÉTICA E GOVERNANÇA DE DADOS</span>
+                                <span style="color: #EF4444;">MATCH: 41%</span>
+                            </div>
+                            <div class="progress-bg"><div class="progress-fill" style="width: 41%; background: #EF4444;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-card side-alerts">
+                    <div class="alerts-header">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                        <h2>Pontos de Melhoria</h2>
+                    </div>
+
+                    <div class="alert-box border-blue">
+                        <h4>LACUNA DE ARQUITETURA</h4>
+                        <p>Foque no design de sistemas distribuídos. Faltam evidências de escalabilidade de modelos LLM em produção no seu CV.</p>
+                    </div>
+
+                    <div class="alert-box border-green">
+                        <h4>EVOLUÇÃO DE FERRAMENTAS</h4>
+                        <p>Atualize suas menções ao PyTorch para incluir frameworks de deploy específicos como BentoML ou Ray Serve.</p>
+                    </div>
+
+                    <div class="alert-box border-red">
+                        <h4>DÉFICIT DE CONFORMIDADE</h4>
+                        <p>Habilidade crítica ausente: conhecimento sobre o EU AI Act. Este é um requisito principal para o seu cargo alvo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="recommended-section">
+                <div class="section-header">
+                    <h2>Conexões Recomendadas <span>/ Cursos</span></h2>
+                    <a href="#" class="view-all">VER TRILHA</a>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-img ai-bg">
+                            <span class="badge">TOP MATCH</span>
+                            <div class="icon-overlay">AI</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Orquestração Avançada de LLMs</h3>
+                            <div class="course-meta">
+                                <span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 12h</span>
+                                <span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Intermediário</span>
+                            </div>
+                            <button class="btn-enroll">INSCREVER-SE</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-img server-bg"></div>
+                        <div class="course-content">
+                            <h3>Kubernetes para Cargas de Trabalho de IA</h3>
+                            <div class="course-meta">
+                                <span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 24h</span>
+                                <span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Avançado</span>
+                            </div>
+                            <button class="btn-enroll">INSCREVER-SE</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-img security-bg">
+                            <div class="icon-overlay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+                        </div>
+                        <div class="course-content">
+                            <h3>IA Responsável e Governança</h3>
+                            <div class="course-meta">
+                                <span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 8h</span>
+                                <span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Fundamentos</span>
+                            </div>
+                            <button class="btn-enroll">INSCREVER-SE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="sobre.html">SOBRE NÓS</a>
+                    <a href="#">CONTATO</a>
+                    <a href="#">POLÍTICA DE PRIVACIDADE</a>
+                </div>
+                <p>© 2024 PROJETO TEIA. CONECTANDO ESTUDANTES, CURSOS E OPORTUNIDADES. </p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
