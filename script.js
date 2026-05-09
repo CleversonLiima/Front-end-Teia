@@ -158,3 +158,86 @@ document.addEventListener("mousemove", (e) => {
 
   hero.style.transform = `translate(${x}px, ${y}px)`;
 });
+
+// perfil.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cepInput = document.getElementById('cep');
+    const ruaInput = document.getElementById('rua');
+    const bairroInput = document.getElementById('bairro');
+    const cidadeInput = document.getElementById('cidade');
+    const ufInput = document.getElementById('uf');
+    const form = document.getElementById('profileForm');
+
+    // Máscara simples para o CEP (00000-000)
+    cepInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
+        if (value.length > 5) {
+            value = value.replace(/^(\d{5})(\d)/, '$1-$2');
+        }
+        e.target.value = value;
+    });
+
+    // Evento disparado quando o usuário clica fora do input do CEP
+    cepInput.addEventListener('blur', async (e) => {
+        // Pega apenas os números
+        const cepNumeros = e.target.value.replace(/\D/g, '');
+
+        // Verifica se tem 8 dígitos
+        if (cepNumeros.length === 8) {
+            try {
+                // Feedback visual de carregamento (opcional)
+                ruaInput.value = "Buscando...";
+                
+                // Faz a requisição para a API do ViaCEP
+                const response = await fetch(`https://viacep.com.br/ws/${cepNumeros}/json/`);
+                const data = await response.json();
+
+                if (data.erro) {
+                    alert('CEP não encontrado na rede da TEIA.');
+                    limparCamposEndereco();
+                } else {
+                    // Preenche os campos
+                    ruaInput.value = data.logradouro;
+                    bairroInput.value = data.bairro;
+                    cidadeInput.value = data.localidade;
+                    ufInput.value = data.uf;
+                    
+                    // Foca no campo "Número" automaticamente
+                    document.getElementById('numero').focus();
+                }
+            } catch (error) {
+                console.error("Erro ao buscar o CEP:", error);
+                alert('Erro na conexão com os servidores. Tente novamente.');
+                limparCamposEndereco();
+            }
+        } else if (cepNumeros.length > 0) {
+            alert('CEP inválido. Digite os 8 números.');
+            limparCamposEndereco();
+        }
+    });
+
+    function limparCamposEndereco() {
+        ruaInput.value = '';
+        bairroInput.value = '';
+        cidadeInput.value = '';
+        ufInput.value = '';
+    }
+
+    // Ação do botão salvar
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Efeito visual no botão
+        const btn = form.querySelector('.btn-save');
+        const textOriginal = btn.innerHTML;
+        btn.innerHTML = 'SINCRONIZANDO...';
+        btn.style.opacity = '0.7';
+
+        setTimeout(() => {
+            alert('Seu Avatar Neural foi atualizado com sucesso!');
+            btn.innerHTML = textOriginal;
+            btn.style.opacity = '1';
+        }, 1500);
+    });
+});

@@ -116,6 +116,10 @@ body::before{
     width:125px;
     height:48px;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     border:none;
     border-radius:14px;
 
@@ -124,10 +128,15 @@ body::before{
     color:#001b2e;
 
     font-weight:700;
+    text-decoration:none;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:.35s;
+
+    box-shadow:
+    0 0 20px rgba(62,216,255,.25),
+    0 0 45px rgba(62,216,255,.15);
 }
 
 .btn-login:hover{

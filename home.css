@@ -147,6 +147,10 @@ body::after{
     width:125px;
     height:48px;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     border:none;
     border-radius:14px;
 
@@ -155,6 +159,7 @@ body::after{
     color:#001b2e;
 
     font-weight:700;
+    text-decoration:none;
 
     cursor:pointer;
 

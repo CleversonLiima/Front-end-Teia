@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teia - Meu Perfil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+        
+        <div class="sidebar-wrapper">
+            <div class="sidebar-trigger">
+                <div class="avatar-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h3>Perfil</h3>
+                        <span>NÍVEL: ARQUITETO</span>
+                    </div>
+                </div>
+
+                <nav class="side-nav">
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        Conexões
+                    </a>
+                    <a href="dashboard.html" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        Trilhas
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        Cursos
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        Empresas
+                    </a>
+                    <a href="#" class="nav-item active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        Meu Perfil
+                    </a>
+                </nav>
+            </aside>
+        </div>
+
+        <main class="main-content">
+            
+            <header class="top-nav">
+                <div></div>
+                <nav class="menu">
+                    <a href="home.html">HOME</a>
+                    <a href="dashboard.html">DASHBOARD</a>
+                    <a href="perfil.html" class="active">PERFIL</a>
+                </nav>
+                <div class="header-actions"></div>
+            </header>
+
+            <section class="dash-hero">
+                <div class="hero-text">
+                    <span class="eyebrow">— DADOS DO PERFIL</span>
+                    <h1>Configure o seu <span class="highlight">perfil</span></h1>
+                    <p>Atualize suas informações pessoais, profissionais e endereço para refinar as conexões e oportunidades recomendadas pela TEIA.</p>
+                </div>
+            </section>
+
+            <div class="profile-card">
+                <form id="profileForm">
+                    
+                    <div class="form-section">
+                        <h2 class="section-title">Informações Pessoais</h2>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label>NOME COMPLETO</label>
+                                <input type="text" placeholder="Seu nome" value="Lukas M.">
+                            </div>
+                            <div class="input-group">
+                                <label>DATA DE NASCIMENTO</label>
+                                <input type="date">
+                            </div>
+                            <div class="input-group">
+                                <label>TELEFONE / WHATSAPP</label>
+                                <input type="text" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="input-group">
+                                <label>GÊNERO</label>
+                                <select>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="m">Masculino</option>
+                                    <option value="f">Feminino</option>
+                                    <option value="nb">Não-binário</option>
+                                    <option value="outros">Prefiro não informar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2 class="section-title">Localização <span>(Autopreenchimento)</span></h2>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label>CEP</label>
+                                <input type="text" id="cep" placeholder="00000-000" maxlength="9">
+                            </div>
+                            <div class="input-group" style="grid-column: span 2;">
+                                <label>RUA / LOGRADOURO</label>
+                                <input type="text" id="rua" placeholder="Nome da rua">
+                            </div>
+                            <div class="input-group">
+                                <label>NÚMERO</label>
+                                <input type="text" id="numero" placeholder="123">
+                            </div>
+                            <div class="input-group">
+                                <label>COMPLEMENTO</label>
+                                <input type="text" id="complemento" placeholder="Apto, Bloco...">
+                            </div>
+                            <div class="input-group">
+                                <label>BAIRRO</label>
+                                <input type="text" id="bairro" placeholder="Seu bairro">
+                            </div>
+                            <div class="input-group">
+                                <label>CIDADE</label>
+                                <input type="text" id="cidade" placeholder="Sua cidade" readonly>
+                            </div>
+                            <div class="input-group">
+                                <label>ESTADO (UF)</label>
+                                <input type="text" id="uf" placeholder="SP" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2 class="section-title">Identidade Profissional</h2>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label>CARGO ATUAL</label>
+                                <input type="text" placeholder="Ex: Desenvolvedor Front-end">
+                            </div>
+                            <div class="input-group">
+                                <label>LINKEDIN URL</label>
+                                <input type="url" placeholder="https://linkedin.com/in/seu-perfil">
+                            </div>
+                            <div class="input-group">
+                                <label>GITHUB URL</label>
+                                <input type="url" placeholder="https://github.com/seu-usuario">
+                            </div>
+                            <div class="input-group" style="grid-column: 1 / -1;">
+                                <label>BIO / RESUMO PROFISSIONAL</label>
+                                <textarea rows="4" placeholder="Fale um pouco sobre sua trajetória, tecnologias que domina e o que busca na TEIA..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-save">
+                            SALVAR DADOS
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-links">
+                    <a href="sobre.html">SOBRE NÓS</a>
+                    <a href="#">CONTATO</a>
+                    <a href="#">POLÍTICA DE PRIVACIDADE</a>
+                </div>
+                <p>© 2024 PROJETO TEIA. CONECTANDO ESTUDANTES, CURSOS E OPORTUNIDADES. </p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>
